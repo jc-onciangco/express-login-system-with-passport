@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 100%;
+            background-color: antiquewhite;
+            transform: translateY(100px);
+        }
+
+        
+        .wrapper > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wrapper > div > div{
+            background-color: coral;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .wrapper > div a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .wrapper form .form-field{
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper form .form-field label{
+            margin-bottom: 5px;
+        }
+        .wrapper form .form-field input{
+            height: 2rem;
+            font-size: 1.2rem;
+            padding-left: 3px;
+        }
+
+        .wrapper form button{
+            outline: none;
+            font-size: 1rem;
+            padding: 4px 10px;
+            border: none;
+            background-color: salmon;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        @media (min-width:376px){
+            .wrapper{
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h1>Log in</h1>
+            <div><a href="/">BACK</a></div>
+        </div>
+        <form action="">
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
